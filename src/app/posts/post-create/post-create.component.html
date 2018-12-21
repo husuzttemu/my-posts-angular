@@ -1,0 +1,34 @@
+<!--
+  string interpalation
+  <p>
+    {{ newPost }
+  </p>
+-->
+
+<!--
+  property binding
+  <textarea rows="6" [value]="newPost" >
+    -->
+
+    <!--two way binding
+      <textarea rows="6" [value]="newPost" #postInput></textarea>
+      <hr>
+      <button  (click)="onAddPost(postInput)">Save Post</button>
+    -->
+    <mat-card>
+      <mat-form-field class="example-full-width">
+        <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+      </mat-form-field>
+    <button
+    color = "accent"
+    mat-raised-button
+    (click)="onAddPost()">Save Post</button>
+
+    </mat-card>
+
+<!--
+    <p>
+      {{ newPost }}
+    </p>
+    -->
+
