@@ -16,8 +16,11 @@
       <button  (click)="onAddPost(postInput)">Save Post</button>
     -->
     <mat-card>
+      <mat-form-field>
+        <input matInput type="text" [(ngModel)]="enteredTitle">
+      </mat-form-field>
       <mat-form-field class="example-full-width">
-        <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+        <textarea matInput rows="6" [(ngModel)]="enteredContent"></textarea>
       </mat-form-field>
     <button
     color = "accent"
